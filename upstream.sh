@@ -27,14 +27,14 @@ echo $domains_china_list
 echo "$DATE: Getting data updates...1"
 curl -o "/tmp/default.upstream" $dns_default > /dev/null 2>&1
 
-echo "$DATE: Getting data updates...1.5"
+echo "$DATE: Getting data updates...2"
 curl -o "/tmp/special.upstream" $dns_special > /dev/null 2>&1
 
 
-echo "$DATE: Getting data updates...2"
+echo "$DATE: Getting data updates...3"
 curl -o /tmp/chinalist.upstream $domains_china_list
 
-echo "$DATE: Processing data format...3"
+echo "$DATE: Processing data format...4"
 cat "/tmp/default.upstream" "/tmp/special.upstream" "/tmp/chinalist.upstream" > /usr/share/adguardhome.upstream
 sed -i  "s|server=|[|g" /usr/share/adguardhome.upstream
 sed -i  "s|/114|/]114|g" /usr/share/adguardhome.upstream
@@ -42,7 +42,7 @@ sed -i  "s|/114|/]114|g" /usr/share/adguardhome.upstream
 response=$(curl -s $dns_only_for_china)
 sed -i "s|114.114.114.114|$response|g" /usr/share/adguardhome.upstream
 
-echo "$DATE: Cleaning...4"
+echo "$DATE: Cleaning...5"
 rm /tmp/*.upstream
 
 echo "$DATE: Restarting AdGuardHome service..."
