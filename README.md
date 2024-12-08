@@ -19,7 +19,7 @@
   ::1<br>
 <h5>4.勾选乐观缓存</h5>
 <h5>5.yaml文件内字段设置并保存：</h5>
-  upstream_dns_file: /usr/share/adguardhome.upstream<br>
+  upstream_dns_file: /usr/share/adguardhome.upstream
 
 <h5>6.以上步骤，作为首次使用AdguardHome的初次设置</h5>
 
