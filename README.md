@@ -35,7 +35,7 @@
 
  以下命令用来执行最新脚本<br>
  
- curl https://cdn.jsdelivr.com/busymilk/AdguardHomeSetting/refs/heads/main/upstream.sh | bash
+ curl https://cdn.jsdelivr.net/busymilk/AdguardHomeSetting/refs/heads/main/upstream.sh | bash
 
   
 
