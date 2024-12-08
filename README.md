@@ -27,7 +27,11 @@
 <h5>7.以下内容可作为定期执行的脚本:</h5>
  curl https://raw.githubusercontent.com/busymilk/AdguardHomeSetting/refs/heads/main/upstream.sh | bash<br>
  or<br>
- curl https://raw.gitmirror.com/busymilk/AdguardHomeSetting/refs/heads/main/upstream.sh | bash /dev/stdin raw.gitmirror.com
+ curl https://raw.gitmirror.com/busymilk/AdguardHomeSetting/refs/heads/main/upstream.sh | bash /dev/stdin raw.gitmirror.com<br>
+
+例如：
+crontab中设置：每天0点执行一次<br>
+0 0 * * *  curl https://raw.gitmirror.com/busymilk/AdguardHomeSetting/refs/heads/main/upstream.sh | bash /dev/stdin raw.gitmirror.com
   
 
  
