@@ -6,7 +6,7 @@ h3://8.8.4.4/dns-query
 #quad9
 https://9.9.9.12/dns-query
 
-#这是我自己注册的，adguard-dns.io，别暴露出去
+#这是我自己注册的，adguard-dns.io
 quic://452c7b8d.d.adguard-dns.com
 
 
