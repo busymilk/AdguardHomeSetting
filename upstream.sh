@@ -11,7 +11,7 @@ curl -o "/tmp/special.upstream" https://raw.githubusercontent.com/busymilk/Adgua
 
 
 echo "$DATE: Getting data updates...2"
-curl -o /tmp/chinalist.upstream https://cdn.jsdelivr.net/felixonmars/dnsmasq-china-list/refs/heads/master/accelerated-domains.china.conf
+curl -o /tmp/chinalist.upstream https://raw.githubusercontent.com/felixonmars/dnsmasq-china-list/refs/heads/master/accelerated-domains.china.conf
 
 echo "$DATE: Processing data format...3"
 cat "/tmp/default.upstream" "/tmp/special.upstream" "/tmp/chinalist.upstream" > /usr/share/adguardhome.upstream
