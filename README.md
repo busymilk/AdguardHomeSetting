@@ -27,14 +27,15 @@
 <h5>7.以下内容可作为定期执行的脚本:</h5>
  以下命令用于更新cdn为最新github文件<br>
  
- curl https://purge.jsdelivr.net/busymilk/AdguardHomeSetting/refs/heads/master/dns_for_default<br>
- curl https://purge.jsdelivr.net/busymilk/AdguardHomeSetting/refs/heads/master/dns_for_special<br>
+ curl https://purge.jsdelivr.net/busymilk/AdguardHomeSetting/refs/heads/main/dns_for_default<br>
+ curl https://purge.jsdelivr.net/busymilk/AdguardHomeSetting/refs/heads/main/dns_for_special<br>
  curl https://purge.jsdelivr.net/felixonmars/dnsmasq-china-list/refs/heads/master/accelerated-domains.china.conf<br>
  curl https://purge.jsdelivr.net/busymilk/AdguardHomeSetting/refs/heads/master/dns_only_for_china.conf<br>
- curl https://purge.jsdelivr.net/busymilk/AdguardHomeSetting/refs/heads/master/upstream.sh<br>
+ curl https://purge.jsdelivr.net/busymilk/AdguardHomeSetting/refs/heads/main/upstream.sh<br>
 
  以下命令用来执行最新脚本<br>
- curl https://cdn.jsdelivr.net/busymilk/AdguardHomeSetting/refs/heads/master/upstream.sh | bash<br>
+ 
+ curl https://cdn.jsdelivr.com/busymilk/AdguardHomeSetting/refs/heads/main/upstream.sh | bash
 
   
 
