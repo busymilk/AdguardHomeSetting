@@ -18,7 +18,7 @@ cat "/tmp/default.upstream" "/tmp/special.upstream" "/tmp/chinalist.upstream" > 
 sed -i  "s|server=|[|g" /usr/share/adguardhome.upstream
 sed -i  "s|/114|/]114|g" /usr/share/adguardhome.upstream
 
-response=$(curl -s https://https://raw.githubusercontent.com/busymilk/AdguardHomeSetting/refs/heads/main/dns_only_for_china.conf)
+response=$(curl -s https://raw.githubusercontent.com/busymilk/AdguardHomeSetting/refs/heads/main/dns_only_for_china.conf)
 sed -i "s|114.114.114.114|$response|g" /usr/share/adguardhome.upstream
 
 echo "$DATE: Cleaning...4"
