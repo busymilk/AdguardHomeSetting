@@ -1,5 +1,5 @@
 <h4>这个是用于AdguardHome dns的相关设置，步骤：</h4>
-
+<h5>0.设置Dnsmasq监听端口号为0,设置yaml文件内监听端口为53</h5>
 <h5>1.设置 AdguardHome里的Bootstrap DNS 服务器：</h5>
 
   https://101.101.101.101/dns-query<br>
@@ -25,17 +25,7 @@
 <h5>6.以上步骤，作为首次使用AdguardHome的初次设置</h5>
 
 <h5>7.以下内容可作为定期执行的脚本:</h5>
- 以下命令用于更新cdn为最新github文件<br>
- 
- curl https://purge.jsdelivr.net/busymilk/AdguardHomeSetting/refs/heads/main/dns_for_default<br>
- curl https://purge.jsdelivr.net/busymilk/AdguardHomeSetting/refs/heads/main/dns_for_special<br>
- curl https://purge.jsdelivr.net/felixonmars/dnsmasq-china-list/refs/heads/master/accelerated-domains.china.conf<br>
- curl https://purge.jsdelivr.net/busymilk/AdguardHomeSetting/refs/heads/main/dns_only_for_china.conf<br>
- curl https://purge.jsdelivr.net/busymilk/AdguardHomeSetting/refs/heads/main/upstream.sh<br>
-
- 以下命令用来执行最新脚本<br>
- 
- curl https://cdn.jsdelivr.net/busymilk/AdguardHomeSetting/refs/heads/main/upstream.sh | bash
+ curl https://github.com/busymilk/AdguardHomeSetting/edit/main/upstream.sh | bash
 
   
 
