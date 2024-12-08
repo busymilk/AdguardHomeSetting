@@ -26,7 +26,7 @@
 
 <h5>7.以下内容可作为定期执行的脚本:</h5>
  curl https://raw.githubusercontent.com/busymilk/AdguardHomeSetting/refs/heads/main/upstream.sh | bash
-
+ curl https://raw.githubusercontent.com/busymilk/AdguardHomeSetting/refs/heads/main/upstream.sh | bash raw.gitmirror.com
   
 
  
