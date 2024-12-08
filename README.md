@@ -25,7 +25,7 @@
 <h5>6.以上步骤，作为首次使用AdguardHome的初次设置</h5>
 
 <h5>7.以下内容可作为定期执行的脚本:</h5>
- curl https://github.com/busymilk/AdguardHomeSetting/edit/main/upstream.sh | bash
+ curl https://raw.githubusercontent.com/busymilk/AdguardHomeSetting/refs/heads/main/upstream.sh | bash
 
   
 
