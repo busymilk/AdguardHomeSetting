@@ -4,10 +4,10 @@ set -e
 DATE=`date '+%T'`
 
 echo "$DATE: Getting data updates...1"
-curl -o "/tmp/default.upstream" https://cdn.jsdelivr.net/busymilk/AdguardHomeSetting/refs/heads/main/dns_for_default > /dev/null 2>&1
+curl -o "/tmp/default.upstream" https://raw.githubusercontent.com/busymilk/AdguardHomeSetting/refs/heads/main/dns_for_default > /dev/null 2>&1
 
 echo "$DATE: Getting data updates...1.5"
-curl -o "/tmp/special.upstream" https://cdn.jsdelivr.net/busymilk/AdguardHomeSetting/refs/heads/main/dns_for_special > /dev/null 2>&1
+curl -o "/tmp/special.upstream" https://raw.githubusercontent.com/busymilk/AdguardHomeSetting/refs/heads/main/dns_for_special > /dev/null 2>&1
 
 
 echo "$DATE: Getting data updates...2"
@@ -18,7 +18,7 @@ cat "/tmp/default.upstream" "/tmp/special.upstream" "/tmp/chinalist.upstream" > 
 sed -i  "s|server=|[|g" /usr/share/adguardhome.upstream
 sed -i  "s|/114|/]114|g" /usr/share/adguardhome.upstream
 
-response=$(curl -s https://cdn.jsdelivr.net/busymilk/AdguardHomeSetting/refs/heads/main/dns_only_for_china.conf)
+response=$(curl -s https://https://raw.githubusercontent.com/busymilk/AdguardHomeSetting/refs/heads/main/dns_only_for_china.conf)
 sed -i "s|114.114.114.114|$response|g" /usr/share/adguardhome.upstream
 
 echo "$DATE: Cleaning...4"
