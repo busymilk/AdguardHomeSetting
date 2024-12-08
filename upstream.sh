@@ -9,17 +9,13 @@ dns_only_for_china='https://raw.githubusercontent.com/busymilk/AdguardHomeSettin
 domains_china_list='https://raw.githubusercontent.com/felixonmars/dnsmasq-china-list/refs/heads/master/accelerated-domains.china.conf'
 
 if [ -z "$1" ]; then
+  echo "使用原生链接raw.githubusercontent.com进行下载"
+else
   echo "使用$1替换raw.githubusercontent.com进行下载"
   dns_default=$(echo $dns_default | sed "s/raw.githubusercontent.com/$1/g")
   dns_special=$(echo $dns_special | sed "s/raw.githubusercontent.com/$1/g")
   dns_only_for_china=$(echo $dns_only_for_china | sed "s/raw.githubusercontent.com/$1/g")
   domains_china_list=$(echo $domains_china_list | sed "s/raw.githubusercontent.com/$1/g")
-  echo $dns_default
-  echo $dns_special
-  echo $dns_only_for_china
-  echo $domains_china_list
-else
-  echo "使用原生链接raw.githubusercontent.com进行下载"
 fi
 
 echo $dns_default
