@@ -30,7 +30,7 @@
  curl https://purge.jsdelivr.net/busymilk/AdguardHomeSetting/refs/heads/main/dns_for_default<br>
  curl https://purge.jsdelivr.net/busymilk/AdguardHomeSetting/refs/heads/main/dns_for_special<br>
  curl https://purge.jsdelivr.net/felixonmars/dnsmasq-china-list/refs/heads/master/accelerated-domains.china.conf<br>
- curl https://purge.jsdelivr.net/busymilk/AdguardHomeSetting/refs/heads/master/dns_only_for_china.conf<br>
+ curl https://purge.jsdelivr.net/busymilk/AdguardHomeSetting/refs/heads/main/dns_only_for_china.conf<br>
  curl https://purge.jsdelivr.net/busymilk/AdguardHomeSetting/refs/heads/main/upstream.sh<br>
 
  以下命令用来执行最新脚本<br>
