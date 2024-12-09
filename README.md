@@ -32,6 +32,17 @@
 例如：
 crontab中设置：每天0点执行一次<br>
 0 0 * * *  curl https://raw.gitmirror.com/busymilk/AdguardHomeSetting/refs/heads/main/upstream.sh | bash /dev/stdin raw.gitmirror.com
+
+<h5>dns黑名单规则订阅</h5>
+https://anti-ad.net/easylist.txt<br>
+https://raw.githubusercontent.com/busymilk/AdguardHomeSetting/refs/heads/main/app_dns_block.conf<br>
+https://raw.githubusercontent.com/busymilk/AdguardHomeSetting/refs/heads/main/app_pcdn_block.conf<br>
+
+or<br>
+
+https://anti-ad.net/easylist.txt<br>
+https://raw.gitmirror.com/busymilk/AdguardHomeSetting/refs/heads/main/app_dns_block.conf<br>
+https://raw.gitmirror.com/busymilk/AdguardHomeSetting/refs/heads/main/app_pcdn_block.conf<br>
   
 
  
