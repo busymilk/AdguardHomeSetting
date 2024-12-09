@@ -36,12 +36,16 @@ crontab中设置：每天0点执行一次<br>
 https://anti-ad.net/easylist.txt<br>
 https://raw.githubusercontent.com/busymilk/AdguardHomeSetting/refs/heads/main/app_dns_block.conf<br>
 https://raw.githubusercontent.com/busymilk/AdguardHomeSetting/refs/heads/main/app_pcdn_block.conf<br>
+https://raw.githubusercontent.com/Womsxd/MyAdBlockRules/refs/heads/master/p2pcdnblock.txt<br>
+https://raw.githubusercontent.com/Womsxd/MyAdBlockRules/refs/heads/master/httpdnsblock.txt<br>
 
 or<br>
 
 https://anti-ad.net/easylist.txt<br>
 https://raw.gitmirror.com/busymilk/AdguardHomeSetting/refs/heads/main/app_dns_block.conf<br>
 https://raw.gitmirror.com/busymilk/AdguardHomeSetting/refs/heads/main/app_pcdn_block.conf<br>
+https://raw.gitmirror.com/Womsxd/MyAdBlockRules/refs/heads/master/p2pcdnblock.txt<br>
+https://raw.gitmirror.com/Womsxd/MyAdBlockRules/refs/heads/master/httpdnsblock.txt<br>
   
 
  
