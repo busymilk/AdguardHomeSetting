@@ -1,3 +1,7 @@
+注意注意！！！GODEBUG=tlskyber=0<br>
+要在环境变量中设置，否则会导致上游服务器缓慢超时<br>
+比如在docker中添加一个env，GODEBUG tlskyber=0<br>
+
 <h4>这个是用于AdguardHome dns的相关设置，步骤：</h4>
 <h5>0.设置Dnsmasq监听端口号为0,设置yaml文件内监听端口为53</h5>
 <h5>1.设置 AdguardHome里的Bootstrap DNS 服务器：</h5>
